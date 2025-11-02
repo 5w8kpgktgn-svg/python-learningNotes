@@ -222,6 +222,19 @@
 #     else:
 #         break
 ###############################################################################
+#GİRİLEN BİR SAYININ ASAL OLUP OLMADIĞINI BULUN
+
+# gir=int(input("lütfen bir sayı girin:"))
+# if ( gir <= 1):
+#     print("asal sayı değil")
+# else:
+#     for i in range(2,gir):
+#         if (gir % i == 0):
+#             print("asal sayı değil")       #asal sayı kontrolu için hem girilen sayıyı hemde 1 sayısını almayıp aradaki diyer sayılar girilen sayıyı bölümünden 0 kalıyorsa o asal değil kalmıyorsa o asal sayı
+#             break
+#     else:    
+#         print("asal sayı")
+
 
 
 
