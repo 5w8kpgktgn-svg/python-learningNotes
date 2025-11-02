@@ -179,22 +179,21 @@
 #     liste=gelen.split(":")
 #     adsoyad=liste[0]
 #     notlar=liste[1].split(",")
-#     notlar=[int(x)for x in notlar]
-#     ortalama= sum(notlar) / len(notlar)
-#     if ortalama>=90 and ortalama<=100:
-#         harf="AA"
+#     notlar=[int(n)for n in notlar]
+#     ortalama= sum(notlar)/len(notlar)
+#     if ortalama >=90 and ortalama<=100:
+#          harf="AA"
 #     elif ortalama>=85 and ortalama<=89:
-#         harf="BA"
+#          harf="BA"
 #     elif ortalama>=65 and ortalama<=84:
-#         harf="cc"
+#          harf="CC"
 #     else:
-#         harf="FF"
-#     return f"ortalama:{ortalama:.2f}({harf})"
-
-# def ortalamaları_oku():
+#          harf="FF"
+#     return f"{adsoyad}: ortalama{ortalama:.2f}({harf})"
+# def notları_gör():
 #     with open("dosya.txt","r",encoding="utf-8") as file:
-#         for i in file:
-#             print(hesap(i))
+#         for f in file:
+#             print(hesap(f))
 # def not_gir():
 #     ad=input("ad:")
 #     soyad=input("soyad:")
@@ -202,24 +201,28 @@
 #     not2=input("not2:")
 #     not3=input("not3:")
 #     with open("dosya.txt","a",encoding="utf-8") as file:
-#         file.write(ad+" "+soyad+":"+not1+","+not2+","+not3+"\n")
-# def notları_kayıtet():
+#         file.write(f"{ad} {soyad} : {not1},{not2},{not3}\n")        
+# def kayıt():
 #     with open("dosya.txt","r",encoding="utf-8") as file:
 #         liste=[]
-#         for b in file:
-#             liste.append(hesap(b))
-#     with open("sonuclar.txt","w",encoding="utf-8") as file2:
-#         for k in liste:
-#             file2.write(k+"\n")
+#         for x in file:
+#             liste.append(hesap(x))
+#     with open("notlar.txt","w",encoding="utf-8") as file2:
+#         for i in liste:
+#           file2.write(f"{i}\n")
+                      
 # while True:
-#     islem=input("1-notları oku\n2-notları gir\n3-notları kayır et\n4-çıkış\n")
+#     islem=input("1-notlar\n2-not gir\n3-notları kayıt et\n4-çık\n")
 #     if islem == "1":
-#         ortalamaları_oku()
+#         notları_gör()
 #     elif islem == "2":
 #         not_gir()
 #     elif islem == "3":
-#         notları_kayıtet()
+#         kayıt()
 #     else:
 #         break
-#########################################################################
+###############################################################################
+
+
+
 
