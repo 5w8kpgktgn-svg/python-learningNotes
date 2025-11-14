@@ -234,6 +234,21 @@
 #             break
 #     else:    
 #         print("asal sayı")
+################################################################################
+# ASALIN FARKLI BİR VERSİYONU
+
+# islem=int(input("bir sayı girin:"))
+# if islem >1:
+#     for i in range(2,islem):
+#        if islem%i==0:
+#           print("bu bir asal sayı değil")
+#           break
+#     else:
+#          print("bu bir asal sayıdır")
+# else:
+#    print("bu bir asal sayı değil")
+###################################################
+
 
 
 
