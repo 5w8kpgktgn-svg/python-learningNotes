@@ -121,27 +121,29 @@
 #         self.ekbakiye=ekbakiye
 #     def paraçekme(self,para):
 #         if self.bakiye >= para:
-#             self.bakiye -= para
-#             print(f"Hesabınızdan {para}tl çekilmiştir")
+#             self.bakiye-=para
+#             print(f"hesabınızdan {para}tl çekilmiştir.kalan bakiyeniz{self.bakiye}tl dir")
 #         else:
-#             toplam= self.bakiye + self.ekbakiye
-#             if toplam >= para:
-#                 gelen=input("ekbakiyeyi kullanmak ister misiniz(evet/hayır):")
-#                 if gelen == "evet":
-#                     kalan= para - self.bakiye
+#             if (self.bakiye + self.ekbakiye)>=para:
+#               while True:
+#                 cevap=input("bakiyeniz yetersiz,ekbakiyeyi kullanmak ister misiniz?(evet/hayır):")
+#                 if cevap == "evet":
+#                     kalan=para-self.bakiye
 #                     self.bakiye=0
-#                     self.ekbakiye -= kalan
-#                     print(f"Hesabınızdan {para}tl çekilmiştir")
+#                     self.ekbakiye-=kalan
+#                     print(f"hesabınızdan{para}tl çekilmiştir.kalan ekbakiyeniz{self.ekbakiye}tl dir")
+#                     break
+#                 elif cevap == "hayır":
+#                     print(f"tamam,ekbakiye kullanılmıyor.üzgünüz normal bakiyeniz bu işlem için yetersiz")
+#                     break
 #                 else:
-#                     pass
+#                     print(f"hatalı giriş yaptınız")
 #             else:
 #                 print(f"üzgünüz,bakiyeniz yetersiz")
-#     def bakiye_göster(self):
-#         print(f"Ana baiye:{self.bakiye},Ekbakiye:{self.ekbakiye}")
+
 # emirhan=Hesap("emirhan",2000,1000)
 # ali=Hesap("ali",1000,500)
-# emirhan.paraçekme(4000)
-# emirhan.bakiye_göster()
+# emirhan.paraçekme(4500)
 ##################################################################
 # LAMBDA,MAP VE FİLTER 
 
@@ -248,6 +250,7 @@
 # else:
 #    print("bu bir asal sayı değil")
 ###################################################
+
 
 
 
