@@ -159,20 +159,21 @@
 
 # import random
 # sayı= random.randint(1,10)
-# hak=int(input("bu sayıyı kaç hakta tahmin edersiniz"))
+# hak=int(input("kaç hakta bulabilirsiniz:"))
 # puan=100
-# eksil= 100 / hak
-# i = 0
-# while i < hak:
-#     tahmin=int(input("tahnin edin:"))
-#     if tahmin >sayı:
-#         print("lütfen daha küçük bir sayı tahmin edin")
-#     elif tahmin < sayı:
+# eksil=100/hak
+# i=0
+# while i<hak:
+#     kal=int(input("sizce bu sayı nedir?:"))
+#     if kal<sayı:
 #         print("lütfen daha büyük bir sayı tahmin edin")
+#     elif kal>sayı:
+#         print("lütfen daha düşük bir sayı girin")
 #     else:
 #         print("tebrikler doğru bildiniz")
 #         break
-# i += 1    
+#     i+=1    
+# print(f"puanınız{100-(eksil*i)}")  
 ####################################################################
 # DERS PUANI YAZDIRMA
 
@@ -250,6 +251,7 @@
 # else:
 #    print("bu bir asal sayı değil")
 ###################################################
+
 
 
 
